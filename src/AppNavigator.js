@@ -11,7 +11,7 @@ const MainNavigator = createStackNavigator(
         HomeScreen: { screen: HomeScreen },
         Login: { screen: LoginScreen },
         SignUp: { screen: SignUpScreen },
-        CarpoolSignee: { screen: CarpoolSigneeScreen}
+        CarpoolSignee: { screen: CarpoolSigneeScreen, navigationOptions: { headerLeft: null} }
     },
     {
         initialRouteName: 'HomeScreen',
@@ -20,7 +20,8 @@ const MainNavigator = createStackNavigator(
                 backgroundColor: 'blue',
                 borderBottomColor: 'blue'
             }
-        }
+        },
+        
     });
 
 const AppContainer = createAppContainer(MainNavigator);
