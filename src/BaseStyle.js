@@ -48,5 +48,9 @@ export const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: 'blue',
         width: 300
+    }, 
+
+    carpoolees: {
+        
     }
 });
